@@ -18,7 +18,8 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="UTF-8">
-
+    
+    <!--MODIFY your web page title -->
     <title>Fusion Tables Layer Example: Legend</title>
 
     <script type="text/javascript"
@@ -71,12 +72,15 @@
 
       function initialize() {
 
+        // MODIFY the map center point, zoom level, and type if desired
         var map = new google.maps.Map(document.getElementById('map-canvas'), {
           center: new google.maps.LatLng(37.4, -90.1),
           zoom: 3,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         });
 
+        // MODIFY: Insert your Google Fusion Table ID number, which is File menu > About this Table
+        // Also, if your geocoded data column is not named "Location," change it below to match yours
         var layer = new google.maps.FusionTablesLayer({
           query: {
             select: 'Location',
@@ -85,7 +89,7 @@
           map: map
         });
 
-        // Create the legend and display on the map
+        // MODIFY Title and text of your legend. Match color names to the GFT map you already created.
         var legend = document.createElement('div');
         legend.id = 'legend';
         var content = [];
