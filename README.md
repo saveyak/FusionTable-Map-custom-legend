@@ -5,14 +5,12 @@ Template to display Google Fusion Table Map with custom legend for non-numerical
 
 Based on code from Google https://developers.google.com/fusiontables/docs/samples/legend
 
-Demos:
+#Demo:
 Google sample point map (North America butterflies) http://jackdougherty.github.io/points.html
-
-My Connecticut sample point map (ADD**) http://jackdougherty.github.io/points-ct.html
 
 to come** polygon version, dynamic version
 
-Instructions for points maps (polygons is similar*)
+#Instructions for points maps (polygons is similar*)
 
 1) Design your Google Fusion Table with two parallel data columns, such as TypeText (such as A, B, C) and TypeNumber (1, 2, 3), and also a Location column (such as addresses, or two columns of latitude & longitude coordinates). For basics on designing Google Fusion Table maps, see my Data Visualization book at http://epress.trincoll.edu/dataviz
 
