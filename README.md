@@ -16,7 +16,7 @@ Google sample point map (North America butterflies) http://jackdougherty.github.
 
 to come** polygon version, dynamic version
 
-##Instructions for points maps (polygons is similar*)
+##Instructions for points maps (polygons is similar - see http://www.mulinblog.com/tutorial-embed-a-google-fusion-tables-map-with-a-legend-to-a-wordpress-post/)
 
 1) Design your Google Fusion Table with two parallel data columns, such as TypeText (such as A, B, C) and TypeNumber (1, 2, 3), and also a Location column (such as addresses, or two columns of latitude & longitude coordinates). In each row, the TypeText must match your TypeNumber (e.g. A = 1, B = 2, etc.), and if you change one value, you must change the other. For basics on designing Google Fusion Table maps, see my Data Visualization book at http://epress.trincoll.edu/dataviz
 
