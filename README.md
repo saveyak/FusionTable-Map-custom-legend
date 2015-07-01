@@ -1,20 +1,12 @@
 FusionTable-Map-custom-legend
 =============================
 
-Template to display Google Fusion Table Map with custom legend for non-numerical bucket categories. Consider this option if you need to create a map with textual legend labels (A, B, C) rather than numerical (0-50, 50-100). The instructions below explain how to simultaneously display map points/polygons using numerical data, and a custom legend using a matching column of textual data. 
+This HTML template displays Google Fusion Table maps with custom text legend for non-numerical bucket categories. Consider this option if you need to create a map with textual legend labels (A, B, C) rather than numerical (0-50, 50-100). Currently, Google Fusion Tables supports automatic legends ONLY for numerical data, such as point map marker icons using buckets, and polygon map fill color styles using buckets or gradients. This template allows you to display text labels in your map legend, by pairing this text column with a numerical column in your Google Fusion Table. 
 
-This solution is necessary because Google Fusion Tables currently supports automatic legends ONLY for numerical data, in these cases:
-- Point marker styles using buckets (numerical data only)
-- Polygon fill color styles using buckets or gradients (numerical data only)
+##Demo:
+Point map of US market locations at http://jackdougherty.github.io/FusionTable-Map-custom-legend/
 
-Learn more at https://support.google.com/fusiontables/answer/185991
-
-Based on code from Google https://developers.google.com/fusiontables/docs/samples/legend
-
-##Demos:
-1) Butterflies point map using Google's sample fusion table [but table is not publicly viewable](https://www.google.com/fusiontables/DataSource?docid=1NIVOZxrr-uoXhpWSQH2YJzY5aWhkRZW0bWhfZw); see map at http://jackdougherty.github.io/FusionTable-Map-custom-legend/butterflies.html
-
-2) **NOT working** Markets point map with [user-uploaded and viewable fusion table] (https://www.google.com/fusiontables/DataSource?docid=1RXgs33--EUO1ARJsNr0VQwju9TyebQpkuBlbxmlF); see map at http://jackdougherty.github.io/FusionTable-Map-custom-legend/markets.html 
+See also the underlying Google Fusion Table at  https://www.google.com/fusiontables/DataSource?docid=1RXgs33--EUO1ARJsNr0VQwju9TyebQpkuBlbxmlF
 
 to come** polygon version, dynamic version
 
@@ -28,7 +20,14 @@ to come** polygon version, dynamic version
 
 4) Obtain a copy of the template file (such as points.html) from this GitHub repository. Either fork it to your own free GitHub account, or clone it to your desktop with GitHub for Mac/Windows, or download the zip file. One advantage to creating your own free GitHub account is that you will need to edit and host your own version on the public web, which is convenient to do with the GitHub Pages feature, but requires learning some additional steps. See details at http://epress.trincoll.edu/dataviz
 
-4) Modify the template HTML file. Look for lines commented with "MODIFY" to insert your preferred title, map center and zoom level, Google Fusion Table ID number and Location column, and the content and colors for your legend. For your legend, display your non-numerical data column (such as TypeText). One advantage to doing all of this in GitHub is the built-in code editor. Or you can use any text editing tool on your desktop.
+4) Modify the template HTML file. Look for lines commented with "MODIFY" to insert:
+- your preferred title
+- map center and zoom level
+- Google Fusion Table ID number
+- Location column
+- styleId and templateId to match the colored markers and info window in your GFT
+- content and colors for your legend. 
+For your legend, display your non-numerical data column (such as TypeText). One advantage to doing all of this in GitHub is the built-in code editor. Or you can use any text editing tool on your desktop.
 
 5) Host your new template file on a web server. One advantage to using GitHub is its Pages features, which is how I display the Demo sites above.
 
@@ -38,3 +37,7 @@ to come** polygon version, dynamic version
 
 ##See also
 - Searchable Map Template by @DerekEder at http://derekeder.com/searchable_map_template/, which is a more sophisticated solution to the non-numerical legend category problem
+
+##Credits:
+Based on code from Google https://developers.google.com/fusiontables/docs/samples/legend
+With help from Karen_J in the GFT Google Products Forum
