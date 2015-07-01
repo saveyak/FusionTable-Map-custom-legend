@@ -85,6 +85,7 @@
           }
         });
         // MODIFY Title and text of your legend. Match color names and labels to the Google Fusion Table map marker icons you already created.
+        // To display link to source data, insert the URL of your Google Fusion Table.
         var legend = document.createElement('div');
         legend.id = 'legend';
         var content = [];
@@ -93,6 +94,7 @@
         content.push('<p><div class="color blue"></div>Whole Foods Market</p>');
         content.push('<p><div class="color yellow"></div>Sprouts Farmers Market</p>');
         content.push('<p>*Only US locations</p>');
+        content.push('<p><a href="https://www.google.com/fusiontables/DataSource?docid=1RXgs33--EUO1ARJsNr0VQwju9TyebQpkuBlbxmlF">Source Data</a>');
         legend.innerHTML = content.join('');
         legend.index = 1;
         map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
