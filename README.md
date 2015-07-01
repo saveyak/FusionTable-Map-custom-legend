@@ -8,9 +8,16 @@ Point map of US market locations at http://jackdougherty.github.io/FusionTable-M
 
 See also the underlying Google Fusion Table at  https://www.google.com/fusiontables/DataSource?docid=1RXgs33--EUO1ARJsNr0VQwju9TyebQpkuBlbxmlF
 
-to come** polygon version, dynamic version
+##To Do:
+- polygon version: for now, see samples at http://gmaps-samples.googlecode.com/svn/trunk/fusiontables/legend_template.html and http://www.mulinblog.com/tutorial-embed-a-google-fusion-tables-map-with-a-legend-to-a-wordpress-post
+- dynamic version
 
-##Instructions for point maps 
+##Credits:
+- Point map based on code from Google https://developers.google.com/fusiontables/docs/samples/legend
+- With coding help from Karen_J in the GFT Google Products Forum
+- Thanks to Bryant Dowd for the market location data
+
+##Point map instructions
 
 1) Design your Google Fusion Table with two parallel data columns, such as TypeText (such as A, B, C) and TypeNumber (1, 2, 3), and also a Location column (such as addresses, or two columns of latitude & longitude coordinates). In each row, the TypeText must match your TypeNumber (e.g. A = 1, B = 2, etc.), and if you change one value, you must change the other. For basics on designing Google Fusion Table maps, see my Data Visualization book at http://epress.trincoll.edu/dataviz
 
@@ -31,13 +38,5 @@ For your legend, display your non-numerical data column (such as TypeText). One 
 
 5) Host your new template file on a web server. One advantage to using GitHub is its Pages features, which is how I display the Demo sites above.
 
-##Polygon maps are similar in design: see
-- http://www.mulinblog.com/tutorial-embed-a-google-fusion-tables-map-with-a-legend-to-a-wordpress-post
-- http://gmaps-samples.googlecode.com/svn/trunk/fusiontables/legend_template.html
-
 ##See also
 - Searchable Map Template by @DerekEder at http://derekeder.com/searchable_map_template/, which is a more sophisticated solution to the non-numerical legend category problem
-
-##Credits:
-Based on code from Google https://developers.google.com/fusiontables/docs/samples/legend
-With help from Karen_J in the GFT Google Products Forum
