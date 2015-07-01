@@ -19,7 +19,7 @@ See also the underlying Google Fusion Table at  https://www.google.com/fusiontab
 
 ##Point map instructions
 
-1) Design your Google Fusion Table with two parallel data columns, such as TypeText (such as A, B, C) and TypeNumber (1, 2, 3), and also a Location column (such as addresses, or two columns of latitude & longitude coordinates). In each row, the TypeText must match your TypeNumber (e.g. A = 1, B = 2, etc.), and if you change one value, you must change the other. For basics on designing Google Fusion Table maps, see my Data Visualization book at http://epress.trincoll.edu/dataviz
+1) Design your Google Fusion Table with two parallel data columns, such as TypeText (such as A, B, C) and TypeNumber (1, 2, 3), and also a Location column (such as a geocoded addresses, or two columns of latitude & longitude coordinates). In each row, the TypeText must match your TypeNumber (e.g. A = 1, B = 2, etc.), and if you change one value, you must change the other. For basics on designing Google Fusion Table maps, see my Data Visualization book at http://epress.trincoll.edu/dataviz
 
 2) Create your Google Fusion Table, create the Map, change feature styles, select points > marker icon > buckets, and choose your numerical data column (such as TypeNumber). Change settings to display your colored points on the map. Do NOT create an automatic legend here.
 
@@ -30,10 +30,10 @@ See also the underlying Google Fusion Table at  https://www.google.com/fusiontab
 4) Modify the template HTML file. Look for lines commented with "MODIFY" to insert:
 - your preferred title
 - map center and zoom level
-- Google Fusion Table ID number
-- Location column
-- styleId and templateId to match the colored markers and info window in your GFT
-- content and colors for your legend. 
+- header of your geocoded location data column
+- Google Fusion Table ID number (see File > About this Table)
+- styleId and templateId to match your colored markers and info window (see Map > Publish > Get JavaScript and HMTL)
+- text labels and colors for your legend (to match those in your Table and your Map feature styles)
 For your legend, display your non-numerical data column (such as TypeText). One advantage to doing all of this in GitHub is the built-in code editor. Or you can use any text editing tool on your desktop.
 
 5) Host your new template file on a web server. One advantage to using GitHub is its Pages features, which is how I display the Demo sites above.
