@@ -12,9 +12,9 @@ Learn more at https://support.google.com/fusiontables/answer/185991
 Based on code from Google https://developers.google.com/fusiontables/docs/samples/legend
 
 ##Demos:
-1) Point map with Google's sample fusion table (butterflies) http://jackdougherty.github.io/FusionTable-Map-custom-legend/butterflies.html
+1) Butterflies point map using Google's sample fusion table (table is not publicly viewable) http://jackdougherty.github.io/FusionTable-Map-custom-legend/butterflies.html
 
-2) *NOT working* Point map with user uploaded fusion table (markets) http://jackdougherty.github.io/FusionTable-Map-custom-legend/markets.html 
+2) **NOT working** Markets point map with [user-uploaded fusion table](https://www.google.com/fusiontables/DataSource?docid=1RXgs33--EUO1ARJsNr0VQwju9TyebQpkuBlbxmlF) http://jackdougherty.github.io/FusionTable-Map-custom-legend/markets.html 
 
 to come** polygon version, dynamic version
 
