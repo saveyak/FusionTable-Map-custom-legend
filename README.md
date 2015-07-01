@@ -12,7 +12,7 @@ Learn more at https://support.google.com/fusiontables/answer/185991
 Based on code from Google https://developers.google.com/fusiontables/docs/samples/legend
 
 ##Demos:
-1) Butterflies point map using Google's sample fusion table (table is not publicly viewable) http://jackdougherty.github.io/FusionTable-Map-custom-legend/butterflies.html
+1) Butterflies point map using Google's sample fusion table [but table is not publicly viewable](https://www.google.com/fusiontables/DataSource?docid=1NIVOZxrr-uoXhpWSQH2YJzY5aWhkRZW0bWhfZw); see map at http://jackdougherty.github.io/FusionTable-Map-custom-legend/butterflies.html
 
 2) **NOT working** Markets point map with [user-uploaded and viewable fusion table] (https://www.google.com/fusiontables/DataSource?docid=1RXgs33--EUO1ARJsNr0VQwju9TyebQpkuBlbxmlF); see map at http://jackdougherty.github.io/FusionTable-Map-custom-legend/markets.html 
 
