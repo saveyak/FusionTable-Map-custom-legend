@@ -17,7 +17,7 @@
     <meta charset="UTF-8">
     
     <!--MODIFY your web page title -->
-    <title>New Orleans School Grades 2017</title>
+    <title>Fusion Tables Layer Example: Legend</title>
 
     <script type="text/javascript"
         src="http://maps.google.com/maps/api/js?sensor=false"></script>
@@ -77,11 +77,11 @@
           map: map,
           query: {
             select: 'Address',
-            from: '1bX1arEObPZLqwqj59wueC8u6yhlEmP5Jd8O6Vh5C',
+            from: '1RXgs33--EUO1ARJsNr0VQwju9TyebQpkuBlbxmlF',
           },
           options:{
-            styleId: 2,
-            templateId: 3
+            styleId: 5,
+            templateId: 6
           }
         });
         // MODIFY Title and text of your legend. Match color names and labels to the Google Fusion Table map marker icons you already created.
@@ -89,13 +89,12 @@
         var legend = document.createElement('div');
         legend.id = 'legend';
         var content = [];
-        content.push('<h3>Performance Scores</h3>');
-        content.push('<p><div class="color blue"></div>A</p>');
-        content.push('<p><div class="color green"></div>B</p>');
-        content.push('<p><div class="color yellow"></div>C</p>');
-        content.push('<p><div class="color purple"></div>D</p>');
-        content.push('<p><div class="color red"></div>F</p>');
-        content.push('<p><a href="https://fusiontables.google.com/DataSource?docid=1bX1arEObPZLqwqj59wueC8u6yhlEmP5Jd8O6Vh5C">Source Data</a>');
+        content.push('<h3>Company</h3>');
+        content.push('<p><div class="color green"></div>The Fresh Market</p>');
+        content.push('<p><div class="color blue"></div>Whole Foods Market</p>');
+        content.push('<p><div class="color yellow"></div>Sprouts Farmers Market</p>');
+        content.push('<p>*Only US locations</p>');
+        content.push('<p><a href="https://www.google.com/fusiontables/DataSource?docid=1RXgs33--EUO1ARJsNr0VQwju9TyebQpkuBlbxmlF">Source Data</a>');
         legend.innerHTML = content.join('');
         legend.index = 1;
         map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
